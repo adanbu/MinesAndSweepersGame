@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fx:id="mainhbox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mines.MyController2">
+   <children>
+      <VBox alignment="CENTER" prefHeight="531.0" prefWidth="165.0" spacing="10.0">
+         <children>
+            <Button fx:id="resetButton" alignment="TOP_CENTER" contentDisplay="CENTER" lineSpacing="20.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#Resetted" prefHeight="31.0" prefWidth="163.0" text="Reset" textAlignment="CENTER" />
+            <HBox alignment="CENTER_RIGHT" spacing="5.0">
+               <children>
+                  <Label fx:id="widthbutton" alignment="TOP_CENTER" prefHeight="21.0" prefWidth="52.0" text="width" />
+                  <TextField fx:id="widthInput" alignment="CENTER" onAction="#setWidth" prefHeight="31.0" prefWidth="87.0" text="10" />
+               </children>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" spacing="10.0">
+               <children>
+                  <Label fx:id="heightbutton" text="height">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="heightInput" alignment="CENTER" onAction="#setHeight" prefHeight="31.0" prefWidth="88.0" text="10" />
+               </children>
+               <padding>
+                  <Insets left="1.0" right="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" spacing="5.0">
+               <children>
+                  <Label fx:id="mineslabel" alignment="CENTER" prefHeight="21.0" prefWidth="64.0" text="mines" />
+                  <TextField fx:id="minesInput" alignment="CENTER" onAction="#setMines" prefHeight="31.0" prefWidth="97.0" text="10">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
